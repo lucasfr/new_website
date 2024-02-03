@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lucas França",
+    "section": "",
+    "text": "I am an Assistant Professor in Computer and Information Sciences at Northumbria University. My research interests include Complex Systems, Computational Neuroscience and Machine Learning. I have a BSc in physics, a MSc in Physics (Statistical Physics and Complex Systems), and a PhD in Computational Neuroscience.\n\n\n PhD in Computational Neuroscience - University College London (London, UK - 2020)\n MSc in Physics - Federal University of Bahia (Salvador, BR - 2015)\n BSc in Physics - Federal University of Bahia (Salvador, BR - 2013)\n\n\n\n Assistant Professor in Computer and Information Sciences - Northumbria University (Newcastle upon Tyne, UK | 2023 - Current)\n Research Associate - King’s College London (London, UK | 2020 - 2023)\n Research Assistant - King’s College London (London, UK | 2020 - 2020)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Lucas França",
+    "section": "",
+    "text": "PhD in Computational Neuroscience - University College London (London, UK - 2020)\n MSc in Physics - Federal University of Bahia (Salvador, BR - 2015)\n BSc in Physics - Federal University of Bahia (Salvador, BR - 2013)"
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html",
+    "href": "posts/multifractal-chj/index.html",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "",
+    "text": "Over the last decades fractal analyses have revolutionised many fields of science. Such metrics are relevant to fields ranging from economics to neuroscience. However, some objects cannot be accurately described with a single scaling factor — fractal dimension — \\(D\\) and require an infinite number of values to be accurately described (Stanley et al. 1999)."
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html#multifractals",
+    "href": "posts/multifractal-chj/index.html#multifractals",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "",
+    "text": "Over the last decades fractal analyses have revolutionised many fields of science. Such metrics are relevant to fields ranging from economics to neuroscience. However, some objects cannot be accurately described with a single scaling factor — fractal dimension — \\(D\\) and require an infinite number of values to be accurately described (Stanley et al. 1999)."
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html#the-multifractal-spectrum",
+    "href": "posts/multifractal-chj/index.html#the-multifractal-spectrum",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "The multifractal spectrum",
+    "text": "The multifractal spectrum\nThe multifractal spectum represents the Holder exponents and their Hausdorff dimensions for an object. Such spectra can be evaluated according to their geometric properties, mainly width (\\(\\Delta\\alpha\\)) and height (\\(\\Delta f\\)) (Stanley et al. 1999; Lucas G. Souza França et al. 2018). An example of multifractal spectrum and its geometric features can be seen in figure @ref(fig:spectrumPlot).\n\n\n\n\n\nExample of multifractal spectrum. The figure shows the two main measures, i.e. width (\\(\\Delta \\alpha\\)) and height (\\(\\Delta f\\))."
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html#the-chhabra-jensen-method",
+    "href": "posts/multifractal-chj/index.html#the-chhabra-jensen-method",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "The Chhabra-Jensen method",
+    "text": "The Chhabra-Jensen method\nThere are several different algorithms that allow the obtention of multifractal spectra from time series. The most famous are the MF-DFA (Gu and Zhou 2010), MF-DMA (Kantelhardt et al. 2002), and Chhabra-Jensen (Chhabra and Jensen 1989).\nThe Chhabra and Jensen (1989) method, amongst other advantages, allows the direct obtention of the multifractal spectra without the use of a Legendre’s transform (Chhabra and Jensen 1989; Biswas, Cresswell, and Bing 2012; Lucas G. Souza França et al. 2018; Lucas Gabriel Souza França, Montoya, and Miranda 2019). The spectra are obtained directly from the two parametric equations @ref(eq:alpha) and @ref(eq:falpha).\n\\[\\begin{equation}\n\\alpha(q) = \\lim_{l\\rightarrow0}\\frac{\\sum_{i}{\\mu_{i}(q,l)\\log{P_{i}(l)}}}{\\log{l}}\n\\label{eq:alpha}\n\\end{equation}\\]\n\\[\\begin{equation}\nf(q) = \\lim_{l\\rightarrow0}{\\frac{\\sum_{i}{\\mu_{i}(q,l)\\log{\\mu_{i}(q,l)}}}{\\log{l}}}\n\\label{eq:falpha}\n\\end{equation}\\]\n\\[\\mu_{i}(q,l) = \\frac{P_{i}(l)^{q}}{\\sum_{j}P_{j}(l)^{q}}\\]"
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html#runing-the-script",
+    "href": "posts/multifractal-chj/index.html#runing-the-script",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "Runing the script",
+    "text": "Runing the script\nThe script used in Lucas G. Souza França et al. (2018) can be downloaded from my Github repository and is currently available in Python and Matlab (if you would like to help the adaptation to other programming languages, please get in touch!). The script can be run as shown below:\n\nPython\nimport chhabrajensen as chj\n\nalpha,falpha,Dq,Rsqr_alpha,Rsqr_falpha,Rsqr_Dq,muScale,Md,Ma,Mf = chj.getSpectrum(Timeseries,qValues,scales)\n\n\nMatlab\n\n[alpha,falpha,Dq,Rsqr_alpha,Rsqr_falpha,Rsqr_Dq,muScale,Md,Ma,Mf] = ChhabraJensen_Yuj_w0(Timeseries,qValues,scales)\nINPUT:\nTimeseries, qValues, and scales are all row vectors.\n{{% alert warning %}} This function assumes that your time series is all positive values and none of the qValues can be between 0 and 1. {{% /alert %}}\nOUTPUT:\nalpha (\\(\\alpha\\)) and falpha (\\(f(\\alpha)\\)) scattered against each other give the multifractal spectrum. qValues (\\(q\\)) and Dq (\\(D_q\\)) scattered against each other give the generalised dimensions spectrum. Rsqr_alpha, Rsqr_falpha, and Rsqr_Dq are the \\(R^2\\) values for each of the values in \\(\\alpha\\), \\(f(\\alpha)\\), and \\(D_q\\) respectively.\n{{% alert warning %}} For the correct obtention of multifractal spectra it is important that both qValues and scales are adequately defined. {{% /alert %}}\nmuScale (\\(\\log(l)\\)), Md, Ma, and Mf (\\(\\mu(q,l)\\)) are the basic matrices from which \\(\\alpha\\), \\(f(\\alpha)\\), and \\(D_q\\) can be constructed by linear regression. They are included in the output mainly for completeness."
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html#defining-scales-range",
+    "href": "posts/multifractal-chj/index.html#defining-scales-range",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "Defining scales range",
+    "text": "Defining scales range\nIt is essential to define the range of scales from which the multifractal spectra are obtained to avoid overfitting and inaccuracies in the curves. This can be done by studying the partition function curves and selecting adequate scales.\nOn a log-log plot, the curves should be linear and scales that do not follow such trend can be easily identified. Figure 2 shows an example of partition function and linear regime.\n\n\n\n\n\n\n\n\n\n\nFigure 2: Partition function by (dyadic) scale - linearised by the logarithm method. The scales show show a linear progression in this plot. Any scales that do not exhibit such pattern should be removed in order to obtain accurate estimates. In this case the first, the second, and the ninth scales, indicated by the dashed lines."
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html#defining-q-range",
+    "href": "posts/multifractal-chj/index.html#defining-q-range",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "Defining \\(q\\) range",
+    "text": "Defining \\(q\\) range\nIt is also possible to define a family of dimensions \\(D_q\\) for multifractal objects. The convergence of \\(D_q\\) can provide clues on the range of \\(q\\), as seen in figure 3.\n\\[D_{q} = \\frac{1}{(q-1)}\\lim_{l \\rightarrow 0} \\frac{\\log\\sum_{i}P_{i}^{q}(l)}{\\log l}\\]\n\n\n\n\n\n\n\n\n\n\nFigure 3: Example of generalised dimensions \\(D_q\\) spectrum. A good practice when define the range of \\(q\\) values is to check hoow long it takes for the \\(D_q\\) values to converge. In this case around \\(q = 30\\), as shown by the dashed lines."
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html#now-you-can-perform-your-multifractal-analyses",
+    "href": "posts/multifractal-chj/index.html#now-you-can-perform-your-multifractal-analyses",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "Now you can perform your multifractal analyses",
+    "text": "Now you can perform your multifractal analyses\nThis was a quick guide on how to evaluate multifractal time series with the script presented at my Github repository. It is also recommended to add an extra protection against overffiting, if you are evaluating large amounts of data, by verifying the \\(R^2\\), e.g. discarding values of \\(\\alpha\\) and \\(f(\\alpha)\\) which feature an \\(R^2 &lt; 0.9\\) — or any other threshold you consider adequate according to your data."
+  },
+  {
+    "objectID": "posts/multifractal-chj/index.html#references",
+    "href": "posts/multifractal-chj/index.html#references",
+    "title": "Estimating multifractal spectra with Chhabra-Jensen’s method",
+    "section": "References:",
+    "text": "References:"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "Neuroscience resources\n\n\n\nResoruces\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\nLucas França\n\n\nMar 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nEstimating multifractal spectra with Chhabra-Jensen’s method\n\n\n\nFractals\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\nLucas França\n\n\nJan 6, 2020\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2021-03-09-neuroscience-resources/index.html",
+    "href": "posts/2021-03-09-neuroscience-resources/index.html",
+    "title": "Neuroscience resources",
+    "section": "",
+    "text": "This repository consists of a series of free resources aimed at Neuroscience PhD students and postdocs. The idea is to list different sources of content comprehending coding, modelling, basic neuroscience, etc.\nIt is, however, still a work in progress and contributions are very welcome. So feel free to open pull requests here."
+  },
+  {
+    "objectID": "posts/2021-03-09-neuroscience-resources/index.html#books",
+    "href": "posts/2021-03-09-neuroscience-resources/index.html#books",
+    "title": "Neuroscience resources",
+    "section": "Books",
+    "text": "Books\n\nComputing\n\nR\n\nR for Data Science\nR Markdown: The Definitive Guide\nggplot2: Elegant Graphics for Data Analysis\nData Visualization: A practical introduction\nFundamentals of Data Visualization\n\n\n\nModelling\n\nElements of Statistical Modeling for Experimental Biology\nBeyond Multiple Linear Regression\nStatistical Inference via Data Science: A ModernDive into R and the Tidyverse\nTidy Modeling with R\nPSY317L Guidebook\nOne Way ANOVA with R\nLightweight Machine Learning Classics with R"
+  },
+  {
+    "objectID": "posts/2021-03-09-neuroscience-resources/index.html#coursesworshops",
+    "href": "posts/2021-03-09-neuroscience-resources/index.html#coursesworshops",
+    "title": "Neuroscience resources",
+    "section": "Courses/Worshops",
+    "text": "Courses/Worshops\n\nComputational Psychiatry Course 2019\n2020 FSL Course\nNeuromatchAcademy\nIntroduction to Computational Thinking - MIT 18.S191 aka 6.S083 aka 22.S092, Fall 2020"
+  },
+  {
+    "objectID": "posts/2021-03-09-neuroscience-resources/index.html#tutorials",
+    "href": "posts/2021-03-09-neuroscience-resources/index.html#tutorials",
+    "title": "Neuroscience resources",
+    "section": "Tutorials",
+    "text": "Tutorials\n\nVisualizations\nCommon statistical tests are linear models"
+  },
+  {
+    "objectID": "posts/2021-03-09-neuroscience-resources/index.html#twitter-threads",
+    "href": "posts/2021-03-09-neuroscience-resources/index.html#twitter-threads",
+    "title": "Neuroscience resources",
+    "section": "Twitter threads",
+    "text": "Twitter threads\n\nData visualisation thread"
+  },
+  {
+    "objectID": "posts/2021-03-09-neuroscience-resources/index.html#datasets",
+    "href": "posts/2021-03-09-neuroscience-resources/index.html#datasets",
+    "title": "Neuroscience resources",
+    "section": "Datasets",
+    "text": "Datasets\n\nHBN dataset"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Lucas França",
+    "section": "",
+    "text": "Assistant Professor in Computer and Information Sciences - Northumbria University (Newcastle upon Tyne, UK | 2023 - Current)\n Research Associate - King’s College London (London, UK | 2020 - 2023)\n Research Assistant - King’s College London (London, UK | 2020 - 2020)"
+  }
+]

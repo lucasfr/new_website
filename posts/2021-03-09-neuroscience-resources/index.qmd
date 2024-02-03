@@ -1,0 +1,24 @@
+---
+title: "Neuroscience resources"
+description: "blog post description (appears underneath the title in smaller text) which is included on the listing page"
+author:
+  - name: Lucas França
+    url: https://lfranca.uk
+    orcid: 0000-0003-0853-1319
+    affiliation: Assistant Professor in Computer and Information Sciences at Northumbria University
+    affiliation-url: https://researchportal.northumbria.ac.uk/en/persons/lucas-franca
+date: 15-03-2021
+categories: [Resoruces]
+citation: 
+  url: https://lfranca.uk/posts/2021-03-09-neuroscience-resources/ 
+draft: false
+---
+
+```{r setup, echo=FALSE, results='hide', cache=FALSE}
+x <- tempfile(fileext = "md")
+on.exit(unlink(x))
+download.file("https://raw.githubusercontent.com/lucasfr/neuroscience_resources/main/README.md", x)
+```
+
+```{r merge, child=x}
+```

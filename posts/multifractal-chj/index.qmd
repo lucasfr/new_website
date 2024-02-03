@@ -1,0 +1,321 @@
+---
+title: "Estimating multifractal spectra with Chhabra-Jensen's method"
+description: "blog post description (appears underneath the title in smaller text) which is included on the listing page"
+author:
+  - name: Lucas França
+    url: https://lfranca.uk
+    orcid: 0000-0003-0853-1319
+    affiliation: Assistant Professor in Computer and Information Sciences at Northumbria University
+    affiliation-url: https://researchportal.northumbria.ac.uk/en/persons/lucas-franca
+date: 01-06-2020
+categories: [Fractals]
+tags: ["fractal", "multifractal", "chhabra-jensen", "tutorial", "how to", "time series", "Python", "Matlab", "script"]
+citation: 
+  url: https://lfranca.uk/posts/multifractal-chj/ 
+bibliography: ref.bib
+link-citations: true
+draft: false
+---
+
+```{r include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(reticulate)
+library(purrr)
+library(tidyr)
+library(plotly)
+```
+
+```{r ggset, include=FALSE}
+# Define gg theme
+
+theme_set(theme_bw() + 
+          theme_bw(base_size = 20) + 
+          theme(panel.border = element_rect(size = 1.5)))
+```
+
+## Multifractals
+
+Over the last decades fractal analyses have revolutionised many fields of science. Such metrics are relevant to fields ranging from economics to neuroscience. However, some objects cannot be accurately described with a single scaling factor --- fractal dimension --- $D$ and require an infinite number of values to be accurately described [@Stanley1999].
+
+## The multifractal spectrum
+
+The multifractal spectum represents the Holder exponents and their Hausdorff dimensions for an object. Such spectra can be evaluated according to their geometric properties, mainly width ($\Delta\alpha$) and height ($\Delta f$) [@Stanley1999; @Franca2018]. An example of multifractal spectrum and its geometric features can be seen in figure \@ref(fig:spectrumPlot).
+
+```{python spectrum, include=FALSE, cache=FALSE}
+import numpy as np
+import chhabrajensen as chj
+
+qi=-15
+qf=15
+dq=1
+Io=2
+Np=8
+Ra=0.9
+qValues = np.arange(qi,qf + 1)
+scales = np.arange(Io,Np + 1)
+
+with open('series.txt', 'r') as f:
+    x = f.readlines()
+    
+x = np.genfromtxt(x, delimiter='\t')
+Timeseries = x[:,1]
+Timeseries
+
+alpha,falpha,Dq,Rsqr_alpha,Rsqr_falpha,Rsqr_Dq,muScale,Md,Ma,Mf = chj.getSpectrum(Timeseries,qValues,scales)
+```
+
+```{r spectrumPlot, echo=FALSE, message=FALSE, warning=FALSE, fig.height=6, fig.width=7.5, fig.cap="\\label Example of multifractal spectrum. The figure shows the two main measures, i.e. width ($\\Delta \\alpha$) and height ($\\Delta f$)."}
+spctr <- data.frame(cbind(py$alpha, 
+                          py$falpha, 
+                          py$Rsqr_alpha, 
+                          py$Rsqr_falpha)) 
+names(spctr) <- c("alpha", "f", "Ralpha", "Rfalpha")
+
+spctr <- spctr %>% 
+  filter(Ralpha >= 0.7 & Rfalpha >= 0.7)
+
+spctr %>% 
+  ggplot(aes(x = alpha, y = f)) + 
+  geom_point(size = I(3), 
+             colour = "#1d91c0") + 
+  annotate("segment", 
+           x = min(spctr$alpha), 
+           xend = max(spctr$alpha), 
+           y = min(spctr$f), 
+           yend = min(spctr$f), 
+           size=0.5, 
+           alpha=1, 
+           arrow=arrow()) + 
+  annotate("segment", 
+           x = max(spctr$alpha), 
+           xend = min(spctr$alpha), 
+           y = min(spctr$f), 
+           yend = min(spctr$f), 
+           size=0.5, 
+           alpha=1, 
+           arrow=arrow()) + 
+  annotate("segment", 
+           x = 1.03555, 
+           xend = 1.03555, 
+           y = min(spctr$f), 
+           yend = max(spctr$f), 
+           size=0.5, 
+           alpha=1, 
+           arrow=arrow()) + 
+  annotate("segment", 
+           x = 1.03555, 
+           xend = 1.03555, 
+           y = max(spctr$f), 
+           yend = min(spctr$f), 
+           size=0.5, 
+           alpha=1, 
+           arrow=arrow()) + 
+  annotate("text", 
+           x = 1.15,
+           y = 0.35, 
+           label = expression(Delta*alpha), 
+           size = 10) + 
+  annotate("text", 
+           x = 1.08,
+           y = 0.7, 
+           label = expression(Delta*"f"), 
+           size = 10) + 
+  xlab(expression(alpha)) + 
+  ylab(expression("f("*alpha*")")) + 
+  ylim(c(0.3, 1.01))
+```
+
+## The Chhabra-Jensen method
+
+There are several different algorithms that allow the obtention of multifractal spectra from time series. The most famous are the MF-DFA [@Gu2010], MF-DMA [@Kantelhardt2002], and Chhabra-Jensen [@Chhabra1989].
+
+The @Chhabra1989 method, amongst other advantages, allows the direct obtention of the multifractal spectra without the use of a Legendre's transform [@Chhabra1989; @Biswas2012; @Franca2018; @Franca2019]. The spectra are obtained directly from the two parametric equations \@ref(eq:alpha) and \@ref(eq:falpha).
+
+```{=tex}
+\begin{equation}
+\alpha(q) = \lim_{l\rightarrow0}\frac{\sum_{i}{\mu_{i}(q,l)\log{P_{i}(l)}}}{\log{l}}
+\label{eq:alpha}
+\end{equation}
+```
+```{=tex}
+\begin{equation}
+f(q) = \lim_{l\rightarrow0}{\frac{\sum_{i}{\mu_{i}(q,l)\log{\mu_{i}(q,l)}}}{\log{l}}}
+\label{eq:falpha}
+\end{equation}
+```
+$$\mu_{i}(q,l) = \frac{P_{i}(l)^{q}}{\sum_{j}P_{j}(l)^{q}}$$
+
+## Runing the script
+
+The script used in @Franca2018 can be downloaded from my [Github repository](https://github.com/lucasfr/chhabra-jensen) and is currently available in Python and Matlab (if you would like to help the adaptation to other programming languages, please get in touch!). The script can be run as shown below:
+
+#### Python
+
+``` python
+import chhabrajensen as chj
+
+alpha,falpha,Dq,Rsqr_alpha,Rsqr_falpha,Rsqr_Dq,muScale,Md,Ma,Mf = chj.getSpectrum(Timeseries,qValues,scales)
+```
+
+#### Matlab
+
+``` matlab
+
+[alpha,falpha,Dq,Rsqr_alpha,Rsqr_falpha,Rsqr_Dq,muScale,Md,Ma,Mf] = ChhabraJensen_Yuj_w0(Timeseries,qValues,scales)
+```
+
+INPUT:
+
+Timeseries, [qValues](#defining-q-range), and [scales](#defining-scales-range) are all row vectors.
+
+{{% alert warning %}} This function assumes that your time series is all positive values and none of the [qValues](#defining-q-range) can be between 0 and 1. {{% /alert %}}
+
+OUTPUT:
+
+alpha ($\alpha$) and falpha ($f(\alpha)$) scattered against each other give the multifractal spectrum. qValues ($q$) and Dq ($D_q$) scattered against each other give the generalised dimensions spectrum. Rsqr_alpha, Rsqr_falpha, and Rsqr_Dq are the $R^2$ values for each of the values in $\alpha$, $f(\alpha)$, and $D_q$ respectively.
+
+{{% alert warning %}} For the correct obtention of multifractal spectra it is important that both [qValues](#defining-q-range) and [scales](#defining-scales-range) are adequately defined. {{% /alert %}}
+
+muScale ($\log(l)$), Md, Ma, and Mf ($\mu(q,l)$) are the basic matrices from which $\alpha$, $f(\alpha)$, and $D_q$ can be constructed by linear regression. They are included in the output mainly for completeness.
+
+## Defining scales range {#defining-scales-range}
+
+It is essential to define the range of scales from which the multifractal spectra are obtained to avoid overfitting and inaccuracies in the curves. This can be done by studying the partition function curves and selecting adequate scales.
+
+On a log-log plot, the curves should be linear and scales that do not follow such trend can be easily identified. Figure 2 shows an example of partition function and linear regime.
+
+```{python partFunc, include=FALSE, cache=FALSE}
+import numpy as np
+import chhabrajensen as chj
+
+qi=-15
+qf=15
+dq=5
+Io=1
+Np=9
+Ra=0.9
+qValues = np.arange(qi,qf + 1,dq)
+scales = np.arange(Io,Np + 1)
+
+with open('series.txt', 'r') as f:
+    x = f.readlines()
+    
+x = np.genfromtxt(x, delimiter='\t')
+Timeseries = x[:,1]
+Timeseries
+
+alpha,falpha,Dq,Rsqr_alpha,Rsqr_falpha,Rsqr_Dq,muScale,Md,Ma,Mf = chj.getSpectrum(Timeseries,qValues,scales)
+```
+
+```{r evalpartFunc, echo=FALSE, message=FALSE, warning=FALSE, fig.width=6, fig.height=4}
+muScales <- py$muScale
+qValues <- as.list(py$qValues)
+Md <- data.frame(t(py$Md))
+
+qValues <- purrr::map_chr(qValues, ~ paste0("q", .))
+
+names(Md) <- qValues
+
+Md <- data.frame(cbind(Md,muScales))
+
+Md <- Md %>% 
+  gather(-muScales, 
+         key = "q", 
+         value = "value") %>% 
+  mutate(q = recode(q, 
+                    "q.10" = "q = -10", 
+                    "q.15" = "q = -15", 
+                    "q.5" = "q = -5", 
+                    "q0" = "q = 0", 
+                    "q5" = "q = 5", 
+                    "q10" = "q = 10", 
+                    "q15" = "q = 15"))
+
+Md$q <- factor(Md$q, levels = c("q = -15", 
+                     "q = -10", 
+                     "q = -5", 
+                     "q = 0", 
+                     "q = 5", 
+                     "q = 10", 
+                     "q = 15"))
+
+Md_plot <- Md %>% 
+  ggplot(aes(x = muScales, y = value)) + 
+  geom_point(aes(colour = q), 
+             size = I(3)) + 
+  scale_colour_viridis_d(end = 0.9) + 
+  geom_vline(xintercept = muScales[3], linetype = "dashed", alpha = 0.4) + 
+  geom_vline(xintercept = muScales[8], linetype = "dashed", alpha = 0.4) + 
+  xlab("log(l)") + 
+  ylab("log(mu(q,l))") + 
+  theme(legend.title = element_blank())
+
+htmltools::div(ggplotly(Md_plot), align="center", )
+```
+
+<p>
+
+<p>
+
+Figure 2: Partition function by (dyadic) scale - linearised by the logarithm method. The scales show show a linear progression in this plot. Any scales that do not exhibit such pattern should be removed in order to obtain accurate estimates. In this case the first, the second, and the ninth scales, indicated by the dashed lines.
+
+## Defining $q$ range {#defining-q-range}
+
+It is also possible to define a family of dimensions $D_q$ for multifractal objects. The convergence of $D_q$ can provide clues on the range of $q$, as seen in figure 3.
+
+$$D_{q} = \frac{1}{(q-1)}\lim_{l \rightarrow 0} \frac{\log\sum_{i}P_{i}^{q}(l)}{\log l}$$
+
+```{python qCheck, include=FALSE, cache=FALSE}
+import numpy as np
+import chhabrajensen as chj
+
+qi=-50
+qf=50
+dq=1
+Io=2
+Np=8
+Ra=0.9
+qValues = np.arange(qi,qf + 1,dq)
+scales = np.arange(Io,Np + 1)
+
+with open('series.txt', 'r') as f:
+    x = f.readlines()
+    
+x = np.genfromtxt(x, delimiter='\t')
+Timeseries = x[:,1]
+Timeseries
+
+alpha,falpha,Dq,Rsqr_alpha,Rsqr_falpha,Rsqr_Dq,muScale,Md,Ma,Mf = chj.getSpectrum(Timeseries,qValues,scales)
+```
+
+```{r qDq, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=6}
+qDq <- data.frame(cbind(py$qValues,py$Dq))
+names(qDq) <- c("q","Dq")
+
+qDq_plot <- qDq %>% 
+  ggplot(aes(x = q, y = Dq)) + 
+  geom_point(colour = "#1d91c0", 
+             size = I(3)) + 
+  geom_vline(xintercept = -30, linetype = "dashed", alpha = 0.4) + 
+  geom_vline(xintercept = 30, linetype = "dashed", alpha = 0.4) + 
+  geom_hline(yintercept = 0.81, linetype = "dashed", alpha = 0.4) + 
+  geom_hline(yintercept = 1.69, linetype = "dashed", alpha = 0.4) + 
+  xlab("q") + 
+  ylab("Dq") 
+
+
+htmltools::div(ggplotly(qDq_plot), align = "center")
+```
+
+<p>
+
+<p>
+
+Figure 3: Example of generalised dimensions $D_q$ spectrum. A good practice when define the range of $q$ values is to check hoow long it takes for the $D_q$ values to converge. In this case around $q = 30$, as shown by the dashed lines.
+
+## Now you can perform your multifractal analyses
+
+This was a quick guide on how to evaluate multifractal time series with the script presented at my [Github repository](https://github.com/lucasfr/chhabra-jensen). It is also recommended to add an extra protection against overffiting, if you are evaluating large amounts of data, by verifying the $R^2$, e.g. discarding values of $\alpha$ and $f(\alpha)$ which feature an $R^2 < 0.9$ --- or any other threshold you consider adequate according to your data.
+
+## References:

@@ -1,11 +1,42 @@
 ---
-title: "new_website"
+title: "Lucas França"
+image: img/avatar.jpg
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/lucas-frança-phd-24156a100/
+    - text: Twitter
+      icon: twitter
+      href: https://twitter.com/lucasphysics
+    - text: GitHub
+      icon: github
+      href: https://github.com/lucasfr
+    - text: E-mail
+      icon: envelope
+      href: mailto:lucas.franca@northumbria.ac.uk
 ---
 
-This is a Quarto website.
+# Bio
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am an Assistant Professor in Computer and Information Sciences at Northumbria University. My research interests include Complex Systems, Computational Neuroscience and Machine Learning. I have a BSc in physics, a MSc in Physics (Statistical Physics and Complex Systems), and a PhD in Computational Neuroscience.
 
-```{r}
-1 + 1
-```
+## Education
+
+{{< fa graduation-cap >}} PhD in Computational Neuroscience - University College London (London, UK - 2020)
+
+{{< fa graduation-cap >}} MSc in Physics - Federal University of Bahia (Salvador, BR - 2015)
+
+{{< fa graduation-cap >}} BSc in Physics - Federal University of Bahia (Salvador, BR - 2013)
+
+## Experience
+
+{{< fa vial >}} Assistant Professor in Computer and Information Sciences - Northumbria University (Newcastle upon Tyne, UK | 2023 - Current)
+
+{{< fa vial >}} Research Associate - King's College London (London, UK | 2020 - 2023)
+
+{{< fa vial >}} Research Assistant - King's College London (London, UK | 2020 - 2020)
