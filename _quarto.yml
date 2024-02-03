@@ -8,13 +8,14 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - publications.qmd
       - posts.qmd
       - about.qmd
 
 format:
   html:
     theme:
-      light: minty
+      light: theme-light.scss
       dark: solar
     css: styles.css
     toc: true

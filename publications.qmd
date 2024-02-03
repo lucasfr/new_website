@@ -1,0 +1,49 @@
+---
+title: "Publications"
+toc: true
+---
+
+{{< fa newspaper >}}: Article | 
+{{< fa book >}}: Book/Book Chapter | 
+{{< fa scroll >}}: Preprint
+
+## 2024
+
+{{< fa scroll >}} Ferré, I. B. S., Corso, G., Lima, G. Z. S., Lopes, S. G., Leocadio-Miguel, M. A., **França, L. G. S.**, Prado, T. L., & Araújo, J. F. (2024). [Cycling reduces the entropy of neuronal activity in the human adult cortex](https://doi.org/10.1101/2024.01.31.578253). bioRxiv, 2024.01.31.578253.
+
+
+## 2023
+
+{{< fa book >}} **França, L. G. S.**, Fenn-Moltu, S., & Batalle, D. (2023). [Dynamic functional connectivity](https://doi.org/10.1016/B978-0-323-85280-7.00006-3). In Connectome Analysis (pp. 219-245). Academic Press.
+
+{{< fa scroll >}} Kulgod, A., Linden, D. V. D., **Franca, L. G. S.**, Jackson, M., & Zamansky, A. (2023). [Non-invasive canine electroencephalography (EEG): a systematic review](https://doi.org/10.1101/2023.08.14.552730). bioRxiv, 2023-08.
+
+## 2022
+
+{{< fa scroll >}} **França, L. G. S.**, Ciarrusta, J., Gale-Grant, O., Fenn-Moltu, S., Fitzgibbon, S., Chew, A., ... & Batalle, D. (2022). [Neonatal brain dynamic functional connectivity: impact of preterm birth and association with early childhood neurodevelopment](https://doi.org/10.1101/2022.11.16.516610). bioRxiv, 2022-11.
+
+{{< fa scroll >}} Gale-Grant, O., Chew, A., Falconer, S., **França, L. G. S.**, Fenn-Moltu, S., Hadaya, L., ... & Batalle, D. (2022). [Clinical, socio-demographic, and parental correlates of early autism traits](https://doi.org/10.1101/2022.09.26.508121). bioRxiv, 2022-09.
+
+{{< fa newspaper >}} Gale‐Grant, O., Fenn‐Moltu, S., **França, L. G. S.**, Dimitrova, R., Christiaens, D., Cordero‐Grande, L., ... & Batalle, D. (2022). [Effects of gestational age at birth on perinatal structural brain development in healthy term‐born babies](https://doi.org/10.1002/hbm.25743). Human Brain Mapping, 43(5), 1577-1589.
+
+{{< fa newspaper >}} Kendall, C., Kerr, L. R. F. S., Miranda, J. G. V., Rubin de Pinho, S. T., Silva Andrade, R. F., Rodrigues, L. C.,..., **França, L. G. S.**, ... & Barreto, M. L. (2022). [A social network approach for the study of leprosy transmission beyond the household](https://doi.org/10.1093/trstmh/trab071). Transactions of the Royal Society of Tropical Medicine and Hygiene, 116(2), 100-107.
+
+## 2019
+
+{{< fa newspaper >}} Vakharia, V. N., Sparks, R. E., Li, K., O'Keeffe, A. G., Pérez‐García, F., **França, L. G. S.**, ... & Duncan, J. S. (2019). [Multicenter validation of automated trajectories for selective laser amygdalohippocampectomy](https://doi.org/10.1111/epi.16307). Epilepsia, 60(9), 1949-1959.
+
+{{< fa newspaper >}} Li, K., Vakharia, V. N., Sparks, R., **França, L. G. S.**, Granados, A., McEvoy, A. W., ... & Duncan, J. S. (2019). [Optimizing trajectories for cranial laser interstitial thermal therapy using computer-assisted planning: a machine learning approach](https://doi.org/10.1007/s13311-018-00693-1). Neurotherapeutics, 16, 182-191.
+
+{{< fa newspaper >}} **França, L. G. S.**, Montoya, P., & Miranda, J. G. V. (2019). [On multifractals: a non-linear study of actigraphy data](https://doi.org/10.1016/j.physa.2018.09.122). Physica A: Statistical Mechanics and its Applications, 514, 612-619.
+
+## 2018
+
+{{< fa newspaper >}} **França, L. G. S.**, Miranda, J. G. V., Leite, M., Sharma, N. K., Walker, M. C., Lemieux, L., & Wang, Y. (2018). [Fractal and multifractal properties of electrographic recordings of human brain activity: toward its use as a signal feature for machine learning in clinical applications](https://doi.org/10.3389/fphys.2018.01767). Frontiers in physiology, 9, 1767.
+
+{{< fa scroll >}} **França, L. G. S.**, Miranda, J. G., Leite, M., Sharma, N. K., Walker, M. C., Lemieux, L., & Wang, Y. (2018). [Fractal and multifractal properties of electrographic recordings of human brain activity](https://doi.org/10.48550/arXiv.1806.03889). arXiv preprint arXiv:1806.03889.
+
+## 2017
+
+{{< fa newspaper >}} Sharma, N. K., Pedreira, C., Centeno, M., Chaudhary, U. J., Wehner, T., **França, L. G. S.**, ... & Lemieux, L. (2017). [A novel scheme for the validation of an automated classification method for epileptic spikes by comparison with multiple observers](https://doi.org/10.1016/j.clinph.2017.04.016). Clinical Neurophysiology, 128(7), 1246-1254.
+
+{{< fa newspaper >}} Costa, I. D. S., Gamundí, A., Miranda, J. G. V., **França, L. G. S.**, De Santana, C. N., & Montoya, P. (2017). [Altered functional performance in patients with fibromyalgia](https://doi.org/10.3389/fnhum.2017.00014). Frontiers in human neuroscience, 11, 14.

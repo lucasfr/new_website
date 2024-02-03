@@ -35,8 +35,8 @@ I am an Assistant Professor in Computer and Information Sciences at Northumbria 
 
 ## Experience
 
-{{< fa vial >}} Assistant Professor in Computer and Information Sciences - Northumbria University (Newcastle upon Tyne, UK | 2023 - Current)
+{{< fa vial >}} Assistant Professor in Computer and Information Sciences - Northumbria University (Newcastle upon Tyne, UK \| 2023 - Current)
 
-{{< fa vial >}} Research Associate - King's College London (London, UK | 2020 - 2023)
+{{< fa vial >}} Research Associate - King's College London (London, UK \| 2020 - 2023)
 
-{{< fa vial >}} Research Assistant - King's College London (London, UK | 2020 - 2020)
+{{< fa vial >}} Research Assistant - King's College London (London, UK \| 2020 - 2020)

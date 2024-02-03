@@ -86,7 +86,7 @@
   {
     "objectID": "posts.html",
     "href": "posts.html",
-    "title": "My Blog",
+    "title": "Posts",
     "section": "",
     "text": "Neuroscience resources\n\n\n\nResoruces\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\nLucas França\n\n\nMar 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nEstimating multifractal spectra with Chhabra-Jensen’s method\n\n\n\nFractals\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\nLucas França\n\n\nJan 6, 2020\n\n\n\n\n\n\n\n\nNo matching items"
   },
@@ -138,5 +138,54 @@
     "title": "Lucas França",
     "section": "",
     "text": "Assistant Professor in Computer and Information Sciences - Northumbria University (Newcastle upon Tyne, UK | 2023 - Current)\n Research Associate - King’s College London (London, UK | 2020 - 2023)\n Research Assistant - King’s College London (London, UK | 2020 - 2020)"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": ": Article | : Book/Book Chapter | : Preprint"
+  },
+  {
+    "objectID": "publications.html#section-1",
+    "href": "publications.html#section-1",
+    "title": "Publications",
+    "section": "2023",
+    "text": "2023\n França, L. G. S., Fenn-Moltu, S., & Batalle, D. (2023). Dynamic functional connectivity. In Connectome Analysis (pp. 219-245). Academic Press.\n Kulgod, A., Linden, D. V. D., Franca, L. G. S., Jackson, M., & Zamansky, A. (2023). Non-invasive canine electroencephalography (EEG): a systematic review. bioRxiv, 2023-08."
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "2024",
+    "text": "2024\n Ferré, I. B. S., Corso, G., Lima, G. Z. S., Lopes, S. G., Leocadio-Miguel, M. A., França, L. G. S., Prado, T. L., & Araújo, J. F. (2024). Cycling reduces the entropy of neuronal activity in the human adult cortex. bioRxiv, 2024.01.31.578253."
+  },
+  {
+    "objectID": "publications.html#section-2",
+    "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\n França, L. G. S., Ciarrusta, J., Gale-Grant, O., Fenn-Moltu, S., Fitzgibbon, S., Chew, A., … & Batalle, D. (2022). Neonatal brain dynamic functional connectivity: impact of preterm birth and association with early childhood neurodevelopment. bioRxiv, 2022-11.\n Gale-Grant, O., Chew, A., Falconer, S., França, L. G. S., Fenn-Moltu, S., Hadaya, L., … & Batalle, D. (2022). Clinical, socio-demographic, and parental correlates of early autism traits. bioRxiv, 2022-09.\n Gale‐Grant, O., Fenn‐Moltu, S., França, L. G. S., Dimitrova, R., Christiaens, D., Cordero‐Grande, L., … & Batalle, D. (2022). Effects of gestational age at birth on perinatal structural brain development in healthy term‐born babies. Human Brain Mapping, 43(5), 1577-1589.\n Kendall, C., Kerr, L. R. F. S., Miranda, J. G. V., Rubin de Pinho, S. T., Silva Andrade, R. F., Rodrigues, L. C.,…, França, L. G. S., … & Barreto, M. L. (2022). A social network approach for the study of leprosy transmission beyond the household. Transactions of the Royal Society of Tropical Medicine and Hygiene, 116(2), 100-107."
+  },
+  {
+    "objectID": "publications.html#section-3",
+    "href": "publications.html#section-3",
+    "title": "Publications",
+    "section": "2019",
+    "text": "2019\n Vakharia, V. N., Sparks, R. E., Li, K., O’Keeffe, A. G., Pérez‐García, F., França, L. G. S., … & Duncan, J. S. (2019). Multicenter validation of automated trajectories for selective laser amygdalohippocampectomy. Epilepsia, 60(9), 1949-1959.\n Li, K., Vakharia, V. N., Sparks, R., França, L. G. S., Granados, A., McEvoy, A. W., … & Duncan, J. S. (2019). Optimizing trajectories for cranial laser interstitial thermal therapy using computer-assisted planning: a machine learning approach. Neurotherapeutics, 16, 182-191.\n França, L. G. S., Montoya, P., & Miranda, J. G. V. (2019). On multifractals: a non-linear study of actigraphy data. Physica A: Statistical Mechanics and its Applications, 514, 612-619."
+  },
+  {
+    "objectID": "publications.html#section-4",
+    "href": "publications.html#section-4",
+    "title": "Publications",
+    "section": "2018",
+    "text": "2018\n França, L. G. S., Miranda, J. G. V., Leite, M., Sharma, N. K., Walker, M. C., Lemieux, L., & Wang, Y. (2018). Fractal and multifractal properties of electrographic recordings of human brain activity: toward its use as a signal feature for machine learning in clinical applications. Frontiers in physiology, 9, 1767.\n França, L. G. S., Miranda, J. G., Leite, M., Sharma, N. K., Walker, M. C., Lemieux, L., & Wang, Y. (2018). Fractal and multifractal properties of electrographic recordings of human brain activity. arXiv preprint arXiv:1806.03889."
+  },
+  {
+    "objectID": "publications.html#section-5",
+    "href": "publications.html#section-5",
+    "title": "Publications",
+    "section": "2017",
+    "text": "2017\n Sharma, N. K., Pedreira, C., Centeno, M., Chaudhary, U. J., Wehner, T., França, L. G. S., … & Lemieux, L. (2017). A novel scheme for the validation of an automated classification method for epileptic spikes by comparison with multiple observers. Clinical Neurophysiology, 128(7), 1246-1254.\n Costa, I. D. S., Gamundí, A., Miranda, J. G. V., França, L. G. S., De Santana, C. N., & Montoya, P. (2017). Altered functional performance in patients with fibromyalgia. Frontiers in human neuroscience, 11, 14."
   }
 ]

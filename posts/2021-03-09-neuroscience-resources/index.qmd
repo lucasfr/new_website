@@ -8,7 +8,7 @@ author:
     affiliation: Assistant Professor in Computer and Information Sciences at Northumbria University
     affiliation-url: https://researchportal.northumbria.ac.uk/en/persons/lucas-franca
 date: 15-03-2021
-categories: [Resoruces]
+categories: [Resources]
 citation: 
   url: https://lfranca.uk/posts/2021-03-09-neuroscience-resources/ 
 draft: false
