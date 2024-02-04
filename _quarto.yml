@@ -16,7 +16,7 @@ format:
   html:
     theme:
       light: theme-light.scss
-      dark: solar
+      dark: theme-dark.scss
     css: styles.css
     toc: true
     page-layout: full
