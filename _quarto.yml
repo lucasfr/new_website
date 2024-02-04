@@ -3,7 +3,11 @@ project:
   output-dir: docs
 
 website:
+  favicon: img/icon.png
+  twitter-card: true
+  site-url: https://lfranca.uk
   title: "Lucas França, PhD"
+  cookie-consent: true
   navbar:
     left:
       - href: index.qmd
@@ -20,4 +24,6 @@ format:
     css: styles.css
     toc: true
     page-layout: full
+
+
 
