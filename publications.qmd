@@ -9,8 +9,9 @@ toc: true
 
 ## 2024
 
-{{< fa scroll >}} Ferré, I. B. S., Corso, G., Lima, G. Z. S., Lopes, S. G., Leocadio-Miguel, M. A., **França, L. G. S.**, Prado, T. L., & Araújo, J. F. (2024). [Cycling reduces the entropy of neuronal activity in the human adult cortex](https://doi.org/10.1101/2024.01.31.578253). bioRxiv, 2024.01.31.578253.
+{{< fa newspaper >}} **França, L. G. S.**, Ciarrusta, J., Gale-Grant, O., Fenn-Moltu, S., Fitzgibbon, S., Chew, A., ... & Batalle, D. (2024). [Neonatal brain dynamic functional connectivity in term and preterm infants and its association with early childhood neurodevelopment](https://doi.org/10.1038/s41467-023-44050-z). Nature Communications. 15, 16.
 
+{{< fa scroll >}} Ferré, I. B. S., Corso, G., Lima, G. Z. S., Lopes, S. G., Leocadio-Miguel, M. A., **França, L. G. S.**, Prado, T. L., & Araújo, J. F. (2024). [Cycling reduces the entropy of neuronal activity in the human adult cortex](https://doi.org/10.1101/2024.01.31.578253). bioRxiv, 2024.01.31.578253.
 
 ## 2023
 

@@ -2,14 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lfranca.uk/index.html</loc>
-    <lastmod>2024-02-04T00:25:56.392Z</lastmod>
+    <lastmod>2024-02-04T01:41:04.303Z</lastmod>
   </url>
   <url>
     <loc>https://lfranca.uk/posts.html</loc>
-    <lastmod>2024-02-04T00:25:51.046Z</lastmod>
+    <lastmod>2024-02-04T01:32:49.918Z</lastmod>
   </url>
   <url>
     <loc>https://lfranca.uk/posts/2021-03-09-neuroscience-resources/index.html</loc>
     <lastmod>2024-02-04T00:25:50.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lfranca.uk/posts/multifractal-chj/index.html</loc>
+    <lastmod>2024-02-04T01:34:09.206Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lfranca.uk/publications.html</loc>
+    <lastmod>2024-02-08T22:00:01.175Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lfranca.uk/about.html</loc>
+    <lastmod>2024-02-04T01:33:58.295Z</lastmod>
   </url>
 </urlset>
