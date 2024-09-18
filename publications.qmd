@@ -9,6 +9,10 @@ toc: true
 
 ## 2024
 
+{{< fa newspaper >}} Ferré, I. B. S., Corso, G., Lima, G. Z. S., Lopes, S. G., Leocadio-Miguel, M. A., **França, L. G. S.**, Prado, T. L., & Araújo, J. F. (2024). [Cycling reduces the entropy of neuronal activity in the human adult cortex](https://doi.org/10.1101/2024.01.31.578253). PLoS One.
+
+{{< fa newspaper >}} Gale-Grant, O., Chew, A., Falconer, S., **França, L. G. S.**, Fenn-Moltu, S., Hadaya, L., ... & Batalle, D. (2024). [Clinical, socio-demographic, and parental correlates of early autism traits](https://doi.org/10.1101/2022.09.26.508121). Scientific Reports 14, 8393.
+
 {{< fa newspaper >}} **França, L. G. S.**, Ciarrusta, J., Gale-Grant, O., Fenn-Moltu, S., Fitzgibbon, S., Chew, A., ... & Batalle, D. (2024). [Neonatal brain dynamic functional connectivity in term and preterm infants and its association with early childhood neurodevelopment](https://doi.org/10.1038/s41467-023-44050-z). Nature Communications. 15, 16.
 
 {{< fa scroll >}} Ferré, I. B. S., Corso, G., Lima, G. Z. S., Lopes, S. G., Leocadio-Miguel, M. A., **França, L. G. S.**, Prado, T. L., & Araújo, J. F. (2024). [Cycling reduces the entropy of neuronal activity in the human adult cortex](https://doi.org/10.1101/2024.01.31.578253). bioRxiv, 2024.01.31.578253.
