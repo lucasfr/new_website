@@ -5,9 +5,44 @@ toc: true
 
 {{< fa newspaper >}}: Article | 
 {{< fa book >}}: Book/Book Chapter | 
-{{< fa scroll >}}: Preprint
+{{< fa scroll >}}: Preprint | 
+{{< fa chalkboard-user >}}: Conference Abstract
+
+## 2026
+
+{{< fa scroll >}} Diogo, F. M. C., **França, L. G. S.**, Leocadio-Miguel, M. A., Barbosa, M. N., & Azevedo, C. V. M. D. (2026). [Menstrual cycle irregularity is a biological determinant of mental health independent of sleep in adolescents](https://researchportal.northumbria.ac.uk/en/publications/menstrual-cycle-irregularity-is-a-biological-determinant-of-menta/). bioRxiv. (Submitted)
+
+{{< fa newspaper >}} Whelan, T. P., **França, L. G. S.**, Dimitrov, M., Pretzsch, C. M., Velthuis, H., Pereira, A. C., ... & McAlonan, G. M. (2026). [Autistic Neural 'Shiftability': The Distinct Pharmacological Landscape of the Autistic Brain](https://researchportal.northumbria.ac.uk/en/publications/autistic-neural-shiftability-the-distinct-pharmacological-landsca-2/). Translational Psychiatry. (Accepted/In press)
+
+{{< fa scroll >}} Smith, B. C., Pansara, Z., Timmerman, R. H., Molefi, E., Da Silva Costa, T., Thornton, C., **França, L. G. S.**, Stirling, R. E., Heaps, S. E., Karoly, P. J., Leocadio-Miguel, M., Taylor, P. N., Leiberg, K., & Wang, Y. (2026). [Habitual lifestyle timing explains circadian timing, but daily lifestyle changes do not, in free-living humans across 2000 days](https://arxiv.org/abs/2606.28261). arXiv:2606.28261.
+
+{{< fa newspaper >}} Pugliane, K. C., **França, L. G. S.**, Leocadio-Miguel, M., & Araújo, J. F. (2026). [Low-latitude environmental regularity supports circadian organisation in blind adults](https://doi.org/10.1080/07420528.2026.2688906). Chronobiology International, 1-18.
+
+{{< fa newspaper >}} dos Santos Batista, E., Silva Gomes, S. R. B., de Morais Ferreira, A. B., **França, L. G. S.**, Araújo, J. F., Mortatti, A. L., & Leocadio-Miguel, M. A. (2026). [From movement to METs: A validation of ActTrust® for energy expenditure estimation and physical activity classification in young adults](https://doi.org/10.1371/journal.pone.0348631). PLoS One, 21(5), e0348631.
+
+{{< fa scroll >}} Pugliane, K. C., **Franca, L. G. S.**, Leocadio-Miguel, M., & Araújo, J. F. (2026). [Low-latitude environmental regularity sustains non-photic entrainment in blind adults](https://doi.org/10.64898/2026.03.19.712663). bioRxiv.
+
+{{< fa newspaper >}} Dimitrov, M., Wong, N. M. L., Leaman, S., **França, L. G. S.**, Valasakis, I., He, J., ... & Daly, E. (2026). [μ-Opioid Modulation of Sensorimotor Functional Connectivity in Autism: Insights from a Pharmacological Neuroimaging Investigation using Tianeptine](https://doi.org/10.1016/j.bpsgos.2025.100663). Biological Psychiatry Global Open Science, 6(2), 100663.
+
+{{< fa newspaper >}} Cupertino, L., Lirani-Silva, E., Orcioli-Silva, D., Beretta, V. S., **França, L. G. S.**, Coelho, D. B., & Vitorio, R. (2026). [From Resting-State to Movement: The Role of Cortical Networks in Parkinsonian Gait](https://doi.org/10.1016/j.gaitpost.2025.08.079). Gait and Posture, 125, 109961.
+
+## 2025
+
+{{< fa newspaper >}} Lirani-Silva, E., Silva, L. C. S., Orcioli-Silva, D., Beretta, V. S., **Franca, L. G. S.**, Coelho, D. B., & Vitorio, R. (2025). [Resting-state Alpha Reactivity Is Reduced in Parkinson's Disease and Associated With Gait Variability](https://doi.org/10.1177/15459683251347631). Neurorehabilitation and Neural Repair, 39(9), 742-751.
+
+{{< fa scroll >}} dos Santos Batista, E., Basilio Gomes, S. R., de Morais Ferreira, A. B., **Franca, L. G. S.**, Fontenele Araújo, J., Mortatti, A. L., & Leocadio-Miguel, M. A. (2025). [From Movement to METs: A Validation of ActTrust® for Energy Expenditure Estimation and Physical Activity Classification in Young Adults](https://doi.org/10.1101/2025.05.16.654458). bioRxiv.
+
+{{< fa scroll >}} Dimitrov, M., Wong, N. M. L., Leaman, S., **Franca, L. G. S.**, Valasakis, I., He, J., ... & Daly, E. (2025). [μ-Opioid Modulation of Sensorimotor Functional Connectivity in Autism: Insights from a Pharmacological Neuroimaging Investigation using Tianeptine](https://doi.org/10.1101/2025.03.12.25323848). bioRxiv.
+
+{{< fa newspaper >}} Kulgod, A., van der Linden, D., **Franca, L.**, Jackson, M., & Zamansky, A. (2025). [Non-invasive canine electroencephalography (EEG): a systematic review](https://doi.org/10.1186/s12917-025-04523-3). BMC Veterinary Research, 21(1), 73.
+
+{{< fa chalkboard-user >}} Whelan, T. P., **Franca, L. G. S.**, Dimitrov, M., Mulcrone, N., Puts, N. A. J., Daly, E., & McAlonan, G. M. (2025). [The pharmacologically diverse human brain: how neurosignalling systems regulate neurotypical and neurodivergent resting-state networks](https://doi.org/10.1093/ijnp/pyae059.460). International Journal of Neuropsychopharmacology, 28(Supplement_1), i261.
 
 ## 2024
+
+{{< fa scroll >}} Lirani-Silva, E., Silva, L. C. S., Orcioli-Silva, D., Beretta, V. S., **Franca, L. G. S.**, Coelho, D. B., & Vitorio, R. (2024). [Resting-state alpha reactivity is reduced in Parkinson disease and associated with gait variability](https://doi.org/10.1101/2024.11.27.625690). bioRxiv.
+
+{{< fa scroll >}} Whelan, T. P., **Franca, L. G. S.**, Dimitrov, M., Pretzsch, C. M., Velthuis, H., Pereira, A. C., ... & McAlonan, G. M. (2024). [Autistic Neural Shiftability: The Distinct Pharmacological Landscape of the Autistic Brain](https://doi.org/10.1101/2024.11.08.24316969). medRxiv.
 
 {{< fa newspaper >}} Ferré, I. B. S., Corso, G., Lima, G. Z. S., Lopes, S. G., Leocadio-Miguel, M. A., **França, L. G. S.**, Prado, T. L., & Araújo, J. F. (2024). [Cycling reduces the entropy of neuronal activity in the human adult cortex](https://doi.org/10.1101/2024.01.31.578253). PLoS One.
 
