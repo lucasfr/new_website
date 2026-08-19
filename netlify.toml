@@ -2,9 +2,10 @@
   base = ""
   publish = "docs"
   command = """
-    curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.555/quarto-1.4.555-linux-amd64.tar.gz
-    tar -xzf quarto-1.4.555-linux-amd64.tar.gz
-    export PATH=$PATH:$PWD/quarto-1.4.555/bin
+    curl -L https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.555/quarto-1.4.555-linux-amd64.tar.gz -o /tmp/quarto.tar.gz
+    mkdir -p /tmp/quarto-dist
+    tar -xzf /tmp/quarto.tar.gz -C /tmp/quarto-dist --strip-components=1
+    export PATH=$PATH:/tmp/quarto-dist/bin
     quarto render
   """
 
